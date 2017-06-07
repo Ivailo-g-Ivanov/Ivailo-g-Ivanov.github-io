@@ -1,0 +1,57 @@
+#myCarousel img
+{
+	width:50%;
+}
+
+.carousel-indicators .active{
+    background-color: red;
+}
+.carousel-indicators li
+{
+	background-color:black;
+}
+
+.carousel-control {
+  color:red;
+}
+
+.thumbnail 
+{
+border: 0;
+}
+
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover
+{
+    color: red;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:active,
+.navbar-inverse .navbar-nav > li > a:focus{
+  
+  background-color: red;
+}
+
+
+.carousel-inner > .item > img {
+  width:640px;
+  height:360px;
+}
+
+
+.img-thumbnail
+{
+	background-color:transparent;
+}
+
+
+p 
+{
+    text-indent: 30px;
+}
+
+.btn:focus {
+  outline: none !important;
+}
+

@@ -1,0 +1,68 @@
+
+
+
+
+$(window).load(function(){        
+   $('#myModal').modal('show');
+    }); 
+
+
+
+
+
+
+$(document).ready(function(){ 
+      
+
+      var $content, $modal, $apnData, $modalCon; 
+
+      $content = $(".min");   
+
+
+      //To fire modal
+     
+ 
+
+      $(".modalMinimize").on("click", function(){
+
+                  $modalCon = $(this).closest(".mymodal").attr("id");  
+
+                  $apnData = $(this).closest(".mymodal");
+
+                  $modal = "#" + $modalCon;
+
+                  $(".modal-backdrop").addClass("display-none");   
+
+                  $($modal).toggleClass("min");  
+
+                    if ( $($modal).hasClass("min") ){ 
+
+                        $(".minmaxCon").append($apnData);  
+
+                        $(this).find("i").toggleClass( 'fa-minus').toggleClass( 'fa-clone');
+
+                      } 
+                      else { 
+
+                              $(".container").append($apnData); 
+
+                              $(this).find("i").toggleClass( 'fa-clone').toggleClass( 'fa-minus');
+
+                            };
+
+                  });
+
+        $("button[data-dismiss='modal']").click(function(){   
+
+                $(this).closest(".mymodal").removeClass("min");
+
+                $(".container").removeClass($apnData);   
+
+                $(this).next('.modalMinimize').find("i").removeClass('fa fa-clone').addClass( 'fa fa-minus');
+
+              }); 
+			  
+			 
+  
+
+  });

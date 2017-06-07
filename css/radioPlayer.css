@@ -1,0 +1,107 @@
+
+
+.player-wrap:before, .player-wrap:after {
+  content: "";
+  background-color: black;
+  border-radius: 50%;
+  height: 91px;
+  width: 100px;
+  position: absolute;
+  display: block;
+  top: 0;
+  z-index: -1;
+}
+
+.player-container {
+ 
+  width: 100px;
+  height: 100px;
+ position:center;
+ 
+  margin: 0 auto;
+ 
+ 
+}
+
+.player-wrap {
+  background-color: black;
+  display: block;
+  z-index: 1;
+  width: 230px;
+  height: 91px;
+  margin: 0 auto;
+  color: white;
+  position: relative;
+}
+.player-wrap:before {
+  left: -45px;
+           /*
+border-bottom: 2px solid white;*/
+}
+.player-wrap:after {
+  right: -45px;
+}
+
+.play-pause {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: absolute;
+  left: -33px;
+  top: 7px;
+  background-image: url("http://dev.steelehouse.com/codepen/play-dark.gif");
+  border-radius: 20%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.play-pause.paused {
+  background-image: url("http://dev.steelehouse.com/codepen/pause-dark.gif");
+}
+.play-pause.pausing {
+  background-image: url("http://dev.steelehouse.com/codepen/play-to-pause-dark.gif");
+}
+.play-pause.playing {
+  background-image: url("http://dev.steelehouse.com/codepen/pause-to-play-dark.gif");
+}
+
+
+
+progress {
+  height: 7px;
+  border-radius: 7px;
+  width: 100%;
+  background-color: white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
+
+
+progress::-moz-progress-bar
+{
+	background-color:red;
+}
+
+.song-meta {
+  margin-left: 55px;
+  z-index: 5;
+  width: 100%;
+  padding-right: 40px;
+  padding-top: 11px;
+}
+
+.artist, .pcast-time {
+  font-size: 11px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  opacity: .6;
+}
+
+.pcast-time {
+  letter-spacing: 0;
+}
+
+.
