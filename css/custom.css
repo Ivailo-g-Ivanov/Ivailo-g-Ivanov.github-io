@@ -1,20 +1,5 @@
-#myCarousel img
-{
-	width:50%;
-}
 
-.carousel-indicators .active{
-    background-color: red;
-}
-.carousel-indicators li
-{
-	background-color:black;
-}
-
-.carousel-control {
-  color:red;
-}
-
+body { background: #F5F3EE !important; }
 .thumbnail 
 {
 border: 0;
@@ -55,3 +40,5 @@ p
   outline: none !important;
 }
 
+
+.audioCenter{margin: 10px auto; width: 320px;}

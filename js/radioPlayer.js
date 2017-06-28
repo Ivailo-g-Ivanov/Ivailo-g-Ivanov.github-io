@@ -30,7 +30,7 @@ $('#myModal').on('hide.bs.modal', function () { //Change #myModal with your moda
       }); 
 })
 
-  var pcastPlayers = document.querySelectorAll('.player-container');
+  var pcastPlayers = document.querySelectorAll('.player-container-fluid');
   var speeds = [ 1, 1.5, 2, 2.5, 3, 0.5 ]    
   
   for(i=0;i<pcastPlayers.length;i++) {

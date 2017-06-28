@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -7,8 +7,13 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
+	<link href="css/radioPlayer.css" rel="stylesheet">
+	<link href="css/footerStyle.css" rel="stylesheet">
+	<link href="css/lb.css" rel="stylesheet">
+	
+	
 
-    <script src="js/respond.js"></script>
+   
 </head>
 
 <body>
@@ -21,19 +26,42 @@
 
 <header class="row">
 
-<div class="col-lg-6 col-sm-5">
+<div class="col-lg-4">
 
-<a href="#"><img src="images/logos/logo_ss1.jpg" style = "max-width:300px"></a>
+<a href="#"><img src="images/logos/logo_ss1.png" style = "max-width:300px"></a>
 </div>
 
-<div class="col-lg-6 col-sm-5">
 
-<img src="images/logos/logo_ss2.jpg" style = "max-width:200px" class = "pull-right">
+<div class="col-lg-4">
+
+<div class="player-container-fluid audioCenter">
+  <div class="player-wrap">
+    <div class="play-pause"></div>
+    <section class="song-meta">
+      <div class="artist">Radio Fresh</div>
+      <div class="timeline"></div>  
+      <progress class="pcast-progress" value="0"></progress>
+      <span class="pcast-currenttime pcast-time">0:00</span>
+    </section> 
+   <audio id="main-audio" preload="none" width="100%" src="http://193.108.24.21:8000/fresh">
+            <source src="http://193.108.24.21:8000/fresh" type="audio/mpeg">
+          </audio>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="col-lg-4">
+
+<img src="images/logos/logo_ss2.png" style = "max-width:200px" class = "pull-right">
 
 </div>
 
 </header>
-
 
 
 
@@ -45,12 +73,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="Index.html">Sport & Style</a>
+      <a class="navbar-brand" href="index.html">Sport & Style</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav">
       <li><a href="Adidas.html">Adidas</a></li>
-      <li class ="active"><a href="Nike.html">Nike</a></li>
+      <li class="active"><a href="Nike.html">Nike</a></li>
 	   <li><a href="Puma.html">Puma</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
@@ -73,113 +101,211 @@
 
 
 
-<!-- row 2 -->
-<div class="row">
+
+    <div class="row">
+      <img src="images/nike/nikelogo.png" style="max-width:300px%" class="img-responsive center-block" />
+     
+      <h1 class="text-center">История</h1>
+     
+      <p class="text-left">&quot;Найк&quot;, първоначално известен като Blue Ribbon Sports(синята
+      панделка на спорта), е основан от Университета на Орегон от спортист
+      на име Philip Knight и неговият треньор Bill Bowerman през януари 1964 година.
+      Компанията първоначално работи като дистрибутор на японския
+      производител на обувки Onitsuka Tiger, като прави повечето си продажби на
+      събиранията на Knight&#39;s automobile Найк (на английски: Nike) Найк, Ни́ке или
+      Ни́ка (на гръцки: Νίκη, старогръцко произношение Ни́ке, новогръцко -
+      Ни́ки, в превод победа) в древногръцката митология е богиня на
+      победата. Дъщеря е на титана Палант и океанидата Стикс. Тя е сестра
+      на Зел (Зелос, „завист“), Биа (Бия, „сила“, „насилие“, „принуда“) и
+      Кратос („мощ“, „сила“, „насилие“), които помагат в победите. Нике
+      участва в борбата за власт между Зевс и Кронос, заставайки на
+      страната на Зевс. След победата, тя става неразделна негова
+      спътница. Нике, освен богиня на победата в сраженията, е и символ на
+      победата в спортни и артистични изяви. Крилатата богиня е неизменен
+      атрибут на Зевс и Атина, които са изобразявани с фигурка на Нике в
+      ръка. Зевс Олимпийски, изработен от Фидий, държи в дясната си ръка
+      Нике от злато и слонова кост. Всяко краче от трона му било във
+      формата на танцуващи фигурки на Нике. Нейна статуйка често е
+      принасяна в дар на богинята Атина. Изобразявана е с крила, лавров
+      венец на главата и палмово клонче в ръка, често на колесница.</p>
+    
+      <br>  </br>
+	  <br>  </br>
+
+	 <h1 class="text-center">Най - популярните модели за 2017г.</h1>
+    
+       <br>  </br>  <br>  </br>
+	  
+	  <h2 class="text-center">
+        <em>Nike Air Max</em>
+      </h2>
+     <br>  </br>
+      <img src="images/nike/airmaxfront.jpg" style="max-width:300px%" class="img-responsive center-block" />
+    <br>  </br>
+      <p class="text-left">Преди точно 40 години се ражда легендата Nike Air Max, когато на
+      един от основателите му хрумва идеята за въздушна възглавница в
+      обувките. Малко по-късно тя става видима в модела и така вече няколко
+      десетилетия милиони хора по света ходят по въздух благодарение на
+      това.</p>
+      <br>  </br>
+      <h2 class="text-center">
+        <em>Nike Air Jordan</em>
+      </h2>
+     
+	  <br>  </br>
+	  <img src="images/nike/airjordanfront.jpg" style="max-width:300px%" class="img-responsive center-block" />
+	   <br>  </br>
+       <p class="text-left">Air Jordan е марка за баскетболни обувки и спортни дрехи,
+      произведени от Nike и създадени и утвърдени от легендарния
+      баскетболист на Чикаго булс, Майкъл Джордан.</p>
+	  
+	  <br>  </br>
+      <h2 class="text-center">
+        <em>Nike Air Zoom</em>
+      </h2>
+     <br>  </br>
+      <img src="images/nike/airzoomfront.jpg" style="max-width:300px%" class="img-responsive center-block" />
+      <br>  </br>
+      <p class="text-left">Общото между звездите в бягането Мо Фара, Гален Ръп и
+      Алисън Филикс не са само медалите и рекордите, а и още нещо. Те
+      притежават свръхестествен талант, невероятна скорост и
+      непоколебима спортна етика, но когато става въпрос за най-доброто в
+      спортните обувки, всички използват моделите Nike Zoom Air – с
+      най-гъвкавата версия омекотяваща система Nike Air досега.</p>
+	   <br>  </br>
+	    <br>  </br>
+    </div>
    
-   <h1> We love Purses, do you?</h1>
- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem odit blanditiis, 
- quia soluta quod quasi deleniti, nihil nobis, nulla nostrum cum fuga quam deserunt aliquid obcaecati. Nulla dolor voluptas soluta? </p>
-    
+    <h2 class="text-center">
+      <em>Галерия</em>
+    </h2>
+   <br>  </br>
+  <div class="container mt40">
+    <section class="row">
 
-	</div>
+        <article class="col-xs-12 col-sm-6 col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="images/nike/airmax1.jpg"  class="zoom"  data-type="image" data-toggle="lightbox">
+                        <img src="images/nike/airmax1.jpg"/>
+                        <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+                    </a>
+                </div>
+                <div class="panel-footer">
+                    <h4><a href="#">Nike Air Max</a></h4>
+                    <span class="pull-right">
+                        <i id="like1" class="glyphicon glyphicon-thumbs-up"></i> <div id="like1-bs3"></div>
+                        <i id="dislike1" class="glyphicon glyphicon-thumbs-down"></i> <div id="dislike1-bs3"></div>
+                    </span>
+                </div>
+            </div>
+        </article>
 
-	<div id="myCarousel" class="carousel slide"  data-interval="3000" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
+        <article class="col-xs-12 col-sm-6 col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="images/nike/airmax2.jpg"  class="zoom"  data-type="image" data-toggle="lightbox">
+                        <img src="images/nike/airmax2.jpg"  />
+                        <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+                    </a>
+                </div>
+                <div class="panel-footer">
+                    <h4><a href="#" >Nike Air Max</a></h4>
+                    <span class="pull-right">
+                        <i id="like2" class="glyphicon glyphicon-thumbs-up"></i> <div id="like2-bs3"></div>
+                        <i id="dislike2" class="glyphicon glyphicon-thumbs-down"></i> <div id="dislike2-bs3"></div>
+                    </span>
+                </div>
+            </div>
+        </article>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img class = "img-responsive center-block"  src="images/purse1.jpg" alt="">
-    </div>
+        <article class="col-xs-12 col-sm-6 col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="images/nike/airzoom.jpg" class="zoom"   data-type="image" data-toggle="lightbox">
+                        <img src="images/nike/airzoom.jpg"  />
+                        <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+                    </a>
+                </div>
+                <div class="panel-footer">
+                    <h4><a href="#">Nike Air Zoom</a></h4>  
+                    <span class="pull-right">
+                        <i id="like3" class="glyphicon glyphicon-thumbs-up"></i> <div id="like3-bs3"></div>
+                        <i id="dislike3" class="glyphicon glyphicon-thumbs-down"></i> <div id="dislike3-bs3"></div>
+                    </span>
+                </div>
+            </div>
+        </article>
 
-    <div class="item">
-      <img class = "img-responsive center-block" src="images/purse2.jpg" alt="">
-    </div>
+        <article class="col-xs-12 col-sm-6 col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="images/nike/airjordan.jpg"  class="zoom" data-type="image" data-toggle="lightbox">
+                        <img src="images/nike/airjordan.jpg" />
+                        <span class="overlay"><i class="glyphicon glyphicon-fullscreen"></i></span>
+                    </a>
+                </div>
+                <div class="panel-footer">
+                    <h4><a href="#">Nike Air Jordan</a></h4>  
+                    <span class="pull-right">
+                        <i id="like4" class="glyphicon glyphicon-thumbs-up"></i> <div id="like4-bs3"></div>
+                        <i id="dislike4" class="glyphicon glyphicon-thumbs-down"></i> <div id="dislike4-bs3"></div>
+                    </span>
+                </div>
+            </div>
+        </article>                                              
 
-    <div class="item">
-      <img class = "img-responsive center-block" src="images/purse3.jpg" alt="">
-    </div>
+</section>
+</div>
+   
+    <!-- row 4 -->
+    <footer id="myFooter">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h2 class="logo">
+              <a href="index.html">
+                <img src="images/logos/logo_ss1.jpg" style="max-width:200px" />
+              </a>
+            </h2>
+          </div>
+          <div class="col-sm-2">
+            <h5>За нас</h5>
+            <ul>
+              <li>
+                <a href="#">Кои сме ние</a>
+              </li>
+              <li>
+                <a href="https://www.trustpilot.com/">Оценки и ревюта</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <h5>Помощ</h5>
+            <ul>
+              <li>
+                <a href="#">Изпратете запитване чрез големия червен бутон</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <div class="social-networks">
+            <a href="https://www.facebook.com/" class="facebook"></a> 
+            <a href="https://twitter.com/login?lang=bg" class="twitter"></a> 
+            <a href="https://www.instagram.com/" class="instagram"></a></div>
+            <a href="Contacts.html" button="" type="button" class="btn btn-default">Свържете се с нас</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2017 Ivaylo Ivanov</p>
+      </div>
+    </footer>
   </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-	
-	
-	
-	
-	
-	
-	
-
-
-
-<!-- row 3 -->
-<div class="content row">
-    
-	<div class="col-md-3 col-xs-6" >
-	
-	<p><img src="images/purse1.jpg" alt=""></p>
-    <h4> THIS PURSE HAS STYLE</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, possimus odio, alias, eligendi molestias dolore debitis sunt repellendus necessitatibus optio nisi dicta nostrum! Assumenda, facere cupiditate dignissimos? Eius, incidunt, possimus!</p>
-    <p><a href="#">Read more >></a></p>
-	
-	</div>
-    
-	
-	
-	<div class="col-md-3 col-xs-6">
-	
-	<p><img src="images/purse2.jpg" alt=""></p>
-    <h4> THIS PURSE HAS STYLE</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, possimus odio, alias, eligendi molestias dolore debitis sunt repellendus necessitatibus optio nisi dicta nostrum! Assumenda, facere cupiditate dignissimos? Eius, incidunt, possimus!</p>
-    <p><a href="#">Read more >></a></p>
-	
-	</div>
-    
-	
-	<div class="col-md-3 col-xs-6">
-	
-	<p><img src="images/purse3.jpg" alt=""></p>
-     <h4> THIS PURSE HAS STYLE</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, possimus odio, alias, eligendi molestias dolore debitis sunt repellendus necessitatibus optio nisi dicta nostrum! Assumenda, facere cupiditate dignissimos? Eius, incidunt, possimus!</p>
-    <p><a href="#">Read more >></a></p>
-	
-	</div>
-	
-	
-	<div class="col-md-3 col-xs-6">
-    
-	<p><img src="images/purse4.jpg" alt=""></p>
-   <h4> THIS PURSE HAS STYLE</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, possimus odio, alias, eligendi molestias dolore debitis sunt repellendus necessitatibus optio nisi dicta nostrum! Assumenda, facere cupiditate dignissimos? Eius, incidunt, possimus!</p>
-    <p><a href="#">Read more >></a></p>
-	
-	</div>
-</div>
-
-
-<!-- row 4 -->
-<footer class="row">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptas earum voluptatibus ullam, porro aut. Fuga provident molestiae id impedit facilis. Repudiandae cum ipsam soluta officia eum magnam sequi laudantium.</p>
-    <p>Best Purses in the World</p>
-
-</footer>
-</div>
-<!-- javascript -->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- javascript -->
+   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
-</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.js"></script>
+	<script src="js/radioPlayer.js"></script>
+	<script src="js/lb.js"></script>
 </html>

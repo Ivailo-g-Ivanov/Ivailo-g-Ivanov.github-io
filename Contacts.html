@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -8,31 +8,45 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/form.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
+	<link href="css/footerStyle.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	 <link href="css/radioPlayer.css" rel="stylesheet" />
+	
 	
 
-    <script src="js/respond.js"></script>
+    
 </head>
 
 <body>
 
-
-<div class="container">
-
-
-<!-- row 1 -->
-
-<header class="row">
-
-<div class="col-lg-6 col-sm-5">
-
-<a href="#"><img src="images/logos/logo_ss1.jpg" style = "max-width:300px"></a>
-</div>
-
-<div class="col-lg-6 col-sm-5">
-
-<img src="images/logos/logo_ss2.jpg" style = "max-width:200px" class = "pull-right">
-
-</div>
+ <div class="container">
+    <!-- row 1 -->
+    <header class="row">
+      <div class="col-lg-4">
+        <a href="index.html">
+          <img src="images/logos/logo_ss1.png" style="max-width:300px" />
+        </a>
+      </div>
+      <div class="col-lg-4">
+        <div class="player-container-fluid audioCenter">
+          <div class="player-wrap">
+            <div class="play-pause"></div>
+            <section class="song-meta">
+            <div class="artist">Radio Fresh</div>
+            <div class="timeline"></div>
+            <progress class="pcast-progress" value="0"></progress> 
+            <span class="pcast-currenttime pcast-time">0:00</span></section>
+            <audio id="main-audio" preload="none" width="100%" src="http://193.108.24.21:8000/fresh">
+              <source src="http://193.108.24.21:8000/fresh" type="audio/mpeg" />
+            </audio>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 ">
+        <img src="images/logos/logo_ss2.png" style="max-width:200px" class="pull-right" />
+      </div>
+  
 
 </header>
 
@@ -47,7 +61,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="Index.html">Sport & Style</a>
+      <a class="navbar-brand" href="index.html">Sport & Style</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav">
@@ -64,9 +78,7 @@
 
 
 
-
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+ 
   
   <body>
 
@@ -82,30 +94,32 @@
 
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-              <form method="POST" action="http://formspree.io/ivailo_g_ivanov@abv.bg">
+               <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbydaUsXocPPWh2HA7YgSaB5BfKlftl0kUApV--zl8ewzUrZt74/exec">
 
                   <div class="form-group">
-                      <label class="form-label" id="nameLabel" for="name"></label>
+                      <label class="form-label" id="name" for="name"></label>
                       <input type="text" class="form-control" id="name" name="name" placeholder="Име" tabindex="1">
                   </div>
 
                   <div class="form-group">
-                      <label class="form-label" id="emailLabel" for="email"></label>
+                      <label class="form-label" id="email" for="email"></label>
                       <input type="email" class="form-control" id="email" name="email" placeholder="Email" tabindex="2">
                   </div>
 
                   <div class="form-group">
-                      <label class="form-label" id="subjectLabel" for="sublect"></label>
+                      <label class="form-label" id="subject" for="sublect"></label>
                       <input type="text" class="form-control" id="subject" name="subject" placeholder="Относно" tabindex="3">
                   </div>
 
                   <div class="form-group">
-                      <label class="form-label" id="messageLabel" for="message"></label>
+                      <label class="form-label" id="message" for="message"></label>
                       <textarea rows="6" cols="60" name="message" class="form-control" id="message" placeholder="Вашето съобщение" tabindex="4"></textarea>                                 
                   </div>
 
                   <div class="text-center margin-top-25">
-                      <button type="submit" class="btn btn-mod btn-border btn-large">Изпрати</button>
+                      <button type="submit" id="submit" class="btn btn-mod btn-border btn-large">Изпрати</button>
+					  <br></br>
+					  <br></br>
                   </div>
 
               </form><!-- End form -->
@@ -122,16 +136,88 @@
 
 
 
+<div  class = "row" style="display:none;" id="thankyou_message">
+	<h1 class= "text-center">Благодаря, че се свързахте с нас. Ще бъдете пренасочени към началната страница на сайта.</h1>
+	</div>
 
 
 
 
 
-
+	
+	
+	
+	
+	
+	
+	
+	<footer id="myFooter">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h2 class="logo">
+              <a href="index.html">
+                <img src="images/logos/logo_ss1.jpg" style="max-width:200px" />
+              </a>
+            </h2>
+          </div>
+        
+          <div class="col-sm-2">
+            <h5>За нас</h5>
+            <ul>
+              <li>
+                <a href="#">Кои сме ние</a>
+              </li>
+              <li>
+                <a href="https://www.trustpilot.com/">Оценки и ревюта</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-2">
+            <h5>Помощ</h5>
+            <ul>
+            
+              <li>
+                <a href="#">Изпратете запитване чрез големия червен бутон  <span class="glyphicon glyphicon-arrow-right"></span> </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <div class="social-networks">
+            <a href="https://www.facebook.com/" class="facebook"></a> 
+            <a href="https://twitter.com/login?lang=bg" class="twitter"></a> 
+            <a href="https://www.instagram.com/" class="instagram"></a></div>
+            <a href="Contacts.html" button type="button" class="btn btn-default">Свържете се с нас</button> </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2017 Ivaylo Ivanov</p>
+      </div>
+    </footer>
 
 </div>
+	
+
+  
+  
+  
+  
+  
+  
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 <!-- javascript -->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/radioPlayer.js"></script> 
+	 <script src="js/reload.js"></script>
+	 
+	
+  
+  
+  
+	
 </body>
 </html>

@@ -78,6 +78,15 @@ progress {
 
 
 
+progress::-ms-fill {
+    background-color:red;
+}
+
+
+progress::webkit-progress-bar {
+   background-color: red;
+}
+
 
 progress::-moz-progress-bar
 {
