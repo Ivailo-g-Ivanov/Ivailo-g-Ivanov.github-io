@@ -55,6 +55,7 @@ p
 .btn-primary {
     color: #9d9d9d !important;
     background-color: black !important;
+    border-color:black;
   
 }
 .btn-primary:hover {
