@@ -42,3 +42,23 @@ p
 
 
 .audioCenter{margin: 10px auto; width: 320px;}
+
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
+
+.btn-primary {
+    color: #9d9d9d !important;
+    background-color: black !important;
+    border-color: #2e
+}
+.btn-primary:hover {
+    color: white !important;
+    background-color: red !important;
+    
+}

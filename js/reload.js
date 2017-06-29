@@ -9,7 +9,7 @@ function resetForms() {
 	mysubmit.on("click", function (e) { 
     setTimeout(function()
 	{
-	window.location.href="index.html"
+	window.location.href="Index.html"
 	},6000)
 
 });
